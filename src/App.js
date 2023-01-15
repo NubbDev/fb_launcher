@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import MinecraftLauncher from './components/minecraft/MinecraftLauncher';
+import MinecraftLogin from './components/minecraft/MinecraftLogin';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="vh-100 w-100 container-md d-flex flex-column justify-content-center align-items-center">
+        <h1>Forestblock Launcher</h1>
+      <div className="d-flex gap-3">
+        <MinecraftLauncher/>
+        <MinecraftLogin/>
+      </div>
     </div>
   );
 }
